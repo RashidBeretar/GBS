@@ -9,5 +9,5 @@ string IsHoliday(int a)
     return "нет";
 }
 
-Console.WriteLine("Введите число:");
+Console.WriteLine("Введите цифру:");
 Console.WriteLine(IsHoliday(int.Parse(Console.ReadLine())));
