@@ -13,7 +13,6 @@ int GetSecondDigit(int a)
 }
 
 Console.WriteLine("Введите число:");
-
 int a = int.Parse(Console.ReadLine());
 
 int result = GetSecondDigit(a);
