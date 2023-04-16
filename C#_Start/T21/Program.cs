@@ -3,16 +3,6 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-void PrintArray(double[] array)
-{
-    string str = "";
-    int length = array.Length;
-    for (int i = 0; i < length; i++)
-    {
-        str += (i < length - 1) ? array[i] + ", " : array[i];
-    }
-    Console.WriteLine(str);
-}
 double[] GetArrayFromString(string arrayAsString)
 {
     string[] strings = arrayAsString.Split("; ");
@@ -26,15 +16,15 @@ double[] GetArrayFromString(string arrayAsString)
 }
 double GetDist2Point(double[] A, double[] B)
 {
-    if(A.Length != B.Length)
+    if (A.Length != B.Length)
     {
         Console.WriteLine("Ошибка! Координаты заданы не верно");
         return -1;
     }
     double forsqrt = 0;
-    for(int i = 0; i < A.Length; i++)
+    for (int i = 0; i < A.Length; i++)
     {
-      forsqrt += Math.Pow(A[i] - B[i], 2);
+        forsqrt += Math.Pow(A[i] - B[i], 2);
     }
     return Math.Sqrt(forsqrt);
 }
