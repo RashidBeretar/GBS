@@ -1,9 +1,14 @@
-﻿int[] GetNumberFromConsole(int cnt)
+﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+
+int[] GetNumberFromConsole(int cnt)
 {
     int[] a = new int[cnt];
-    for (int i = 1; i <= cnt; i++)
+    for (int i = 0; i < cnt; i++)
     {
-        a[i - 1] = int.Parse(Console.ReadLine());
+        a[i] = int.Parse(Console.ReadLine());
     }
     return a;
 }
