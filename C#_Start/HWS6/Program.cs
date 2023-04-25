@@ -65,4 +65,5 @@ void Task43()
         Console.WriteLine($"({x}; {y})");
     }
 }
-Task43();
+// Task41();
+// Task43();
