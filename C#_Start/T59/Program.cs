@@ -26,21 +26,17 @@ void PrintArray(int[,] array)
 (int x, int y) GetCoordMin(int[,] array)
 {
     var min = (x: 0, y: 0);
-    // Console.WriteLine("Ищим мин");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            // Console.WriteLine(min);
             if (array[min.x, min.y] > array[i, j])
             {
-                // Console.WriteLine("Смена");
                 min.x = i;
                 min.y = j;
             }
         }
     }
-    // Console.WriteLine("Закончили");
     return min;
 }
 
