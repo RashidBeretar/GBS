@@ -41,7 +41,7 @@ int GetMinSumRowArray(int[,] array)
 
         if (sum < min_sum)
         {
-            Console.WriteLine("Смена");
+            // Console.WriteLine("Смена");
             min_sum = sum;
             num_row = i + 1;
         }
