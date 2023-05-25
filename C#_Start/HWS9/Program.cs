@@ -30,5 +30,5 @@ int AckermanFunction(int n, int m)
     else return AckermanFunction(n - 1, AckermanFunction(n, m - 1));
 }
 // Console.WriteLine(AckermanFunction(2, 3));
-Console.WriteLine(AckermanFunction(3, 2));
+// Console.WriteLine(AckermanFunction(3, 2));
 // Console.WriteLine(AckermanFunction(3, 4));
